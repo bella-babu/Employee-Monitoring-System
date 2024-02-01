@@ -104,7 +104,7 @@ def mark_attendance():
                         })
                         print(f"Employee {employee_id} attendance marked with sign-out time at {current_time}")
                     else:
-                        print("No one is in.")
+                        print("Employee is already signed out.")
                 else:
                     print("Employee not found in records. Please check registration.")
             else:
@@ -178,4 +178,5 @@ def mark_attendance_route():
 
 
 if __name__ == '__main__':
+    # mark_attendance()
     app.run(debug=True)
